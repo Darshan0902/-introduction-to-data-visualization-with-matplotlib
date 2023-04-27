@@ -30,11 +30,7 @@ austin_weather["MONTH"] = month
   
   (i) <ins>Using the matplotlib.pyplot interface</ins>
   
-  _INSTRUCTIONS_
-<br> 1. Import the matplotlib.pyplot API, using the conventional name plt.<br>
-<br> 2. Create Figure and Axes objects using the plt.subplots function.<br>
-<br> 3. Show the results, an empty set of axes, using the plt.show function.<br>
-  
+  <h3> CODE </h3>
  ```
   # Import the matplotlib.pyplot submodule and name it plt
 import matplotlib.pyplot as plt
@@ -52,13 +48,7 @@ plt.show()
 
   (ii.) <ins>Adding data to an Axes object</ins> 
   
-  _INSTRUCTIONS_:
-  
-1.Import the matplotlib.pyplot submodule as plt.<br>
-2.Create a Figure and an Axes object by calling plt.subplots.<br>
-3.Add data from the seattle_weather DataFrame by calling the Axes plot method.<br>
-4.Add data from the austin_weather DataFrame in a similar manner and call plt.show to show the results.<br>
-  
+  <h3>CODE:</h3>
   ```
   
   # Import the matplotlib.pyplot submodule and name it plt
@@ -83,10 +73,9 @@ plt.show()
   ![image](https://user-images.githubusercontent.com/77969007/234919682-254238aa-be99-44ce-a50e-b225e25453ed.png)
 
    (iii.) <ins>Customizing data appearance </ins>
+
+  <h3>CODE:</h3>
   
- <br>Call ax.plot to plot "MLY-PRCP-NORMAL" against "MONTHS" in both DataFrames.<br>
-<br>Pass the color key-word arguments to these commands to set the color of the Seattle data to blue ('b') and the Austin data to red ('r').<br>
-<br>Pass the marker key-word arguments to these commands to set the Seattle data to circle markers ('o') and the Austin markers to triangles pointing downwards ('v').<br>
   
   ```
   # Plot Seattle data, setting data appearance
@@ -109,12 +98,7 @@ plt.show()
   
   _INSTRUCTIONS:_
   
-  <br>Use the set_xlabel method to add the label: "Time (months)".
-<br>
-  <br>Use the set_ylabel method to add the label: "Precipitation (inches)".
-<br>
-  <br>Use the set_title method to add the title: "Weather patterns in Austin and Seattle".
-<br>
+  <h3> CODE : </h3>
   
   ```
   
@@ -143,12 +127,7 @@ plt.show()
   
 (v.)  <ins>Creating small multiples with plt.subplots</ins>
   
-  _Instructions:_
-  <br> 1. Create a Figure and an array of subplots with 2 rows and 2 columns.<br>
-  <br> 2. Addressing the top left Axes as index 0, 0, plot the Seattle precipitation.<br>
-  <br> 3. In the top right (index 0,1), plot Seattle temperatures.
-<br>
-  <br> 4. In the bottom left (1, 0) and bottom right (1, 1) plot Austin precipitations and temperatures.<br>
+  <h3> CODE : </h3>
   
   ```
   
@@ -175,6 +154,10 @@ _Output:_
   
   
   (vi.) <ins> Small multiples with shared y axis </ins>
+  
+  
+  <h3>CODE:</h3>
+  
   ```
   
           # Create a figure and an array of axes: 2 rows, 1 column with shared y axis
