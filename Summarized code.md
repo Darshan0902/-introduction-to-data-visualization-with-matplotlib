@@ -28,7 +28,7 @@ austin_weather["MONTH"] = month
   
 ```
   
-  <h4> (i) Using the matplotlib.pyplot interface </h4>
+  (i) <ins>Using the matplotlib.pyplot interface</ins>
   
   _INSTRUCTIONS_
 <br> 1. Import the matplotlib.pyplot API, using the conventional name plt.<br>
@@ -50,7 +50,7 @@ plt.show()
   OUTPUT : 
   ![image](https://user-images.githubusercontent.com/77969007/234915057-aad4925e-5f06-427d-8d67-7dba6bb29a87.png)
 
-  <h4> (ii.) Adding data to an Axes object </h4>
+  (ii.) <ins>Adding data to an Axes object</ins> 
   
   _INSTRUCTIONS_:
   
@@ -82,7 +82,7 @@ plt.show()
   
   ![image](https://user-images.githubusercontent.com/77969007/234919682-254238aa-be99-44ce-a50e-b225e25453ed.png)
 
-  <h4> (iii.) Customizing data appearance </h4>
+   (iii.) <ins>Customizing data appearance </ins>
   
  <br>Call ax.plot to plot "MLY-PRCP-NORMAL" against "MONTHS" in both DataFrames.<br>
 <br>Pass the color key-word arguments to these commands to set the color of the Seattle data to blue ('b') and the Austin data to red ('r').<br>
@@ -105,7 +105,7 @@ plt.show()
   
   ![image](https://user-images.githubusercontent.com/77969007/234920212-493821c0-6b98-46db-9543-3254d782d36f.png)
   
-  <h4> (iv.) Customizing axis labels and adding titles </h4>
+  (iv.) <ins> Customizing axis labels and adding titles </ins>
   
   _INSTRUCTIONS:_
   
@@ -134,6 +134,95 @@ ax.set_title("Weather patterns in Austin and Seattle")
 plt.show()
   
   ```
+  _Output:_
+  
+  ![image](https://user-images.githubusercontent.com/77969007/234926828-023a952c-5e53-448a-9880-3b417ccf37d0.png)
+  
+  
+  
+  
+(v.)  <ins>Creating small multiples with plt.subplots</ins>
+  
+  _Instructions:_
+  <br> 1. Create a Figure and an array of subplots with 2 rows and 2 columns.<br>
+  <br> 2. Addressing the top left Axes as index 0, 0, plot the Seattle precipitation.<br>
+  <br> 3. In the top right (index 0,1), plot Seattle temperatures.
+<br>
+  <br> 4. In the bottom left (1, 0) and bottom right (1, 1) plot Austin precipitations and temperatures.<br>
+  
+  ```
+  
+  # Create a Figure and an array of subplots with 2 rows and 2 columns
+fig, ax = plt.subplots(2,2)
+
+# Addressing the top left Axes as index 0, 0, plot month and Seattle precipitation
+ax[0, 0].plot(seattle_weather["MONTH"],seattle_weather["MLY-PRCP-NORMAL"])
+
+# In the top right (index 0,1), plot month and Seattle temperatures
+ax[0, 1].plot(seattle_weather["MONTH"],seattle_weather["MLY-TAVG-NORMAL"])
+
+# In the bottom left (1, 0) plot month and Austin precipitations
+ax[1, 0].plot(austin_weather["MONTH"],austin_weather["MLY-PRCP-NORMAL"])
+
+# In the bottom right (1, 1) plot month and Austin temperatures
+ax[1, 1].plot(austin_weather["MONTH"],austin_weather["MLY-TAVG-NORMAL"])
+plt.show()
+  
+  ```
+_Output:_
+  
+  ![image](https://user-images.githubusercontent.com/77969007/234927749-b345cc40-0642-480b-962a-3ad349b60578.png)
+  
+  
+  (vi.) <ins> Small multiples with shared y axis </ins>
+  
+        ```
+  
+          # Create a figure and an array of axes: 2 rows, 1 column with shared y axis
+fig, ax = plt.subplots(2, 1, sharey=True)
+
+# Plot Seattle precipitation in the top axes
+ax[0].plot(seattle_weather["MONTH"], seattle_weather["MLY-PRCP-NORMAL"], color='b')
+ax[0].plot(seattle_weather["MONTH"], seattle_weather["MLY-PRCP-25PCTL"], color='b', linestyle='--')
+ax[0].plot(seattle_weather["MONTH"], seattle_weather["MLY-PRCP-75PCTL"], color='b', linestyle='--')
+
+# Plot Austin precipitation in the bottom axes
+ax[1].plot(austin_weather["MONTH"], austin_weather["MLY-PRCP-NORMAL"], color='r')
+ax[1].plot(austin_weather["MONTH"], austin_weather["MLY-PRCP-25PCTL"], color='r', linestyle='--')
+ax[1].plot(austin_weather["MONTH"], austin_weather["MLY-PRCP-75PCTL"], color='r', linestyle='--')
+
+plt.show()
+  
+  ```
+  
+  _Output:_
+  
+  ![image](https://user-images.githubusercontent.com/77969007/234928181-e5e18f3b-39e9-4d56-aad8-3320f8707d90.png)
+
+  
+  
+  # CHAP-2 : Plotting time-series
+
+     _Time series data is data that is recorded. Visualizing this type of data helps clarify trends and illuminates relationships between data._
+
+
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
