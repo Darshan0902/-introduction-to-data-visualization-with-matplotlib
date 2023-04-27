@@ -175,8 +175,7 @@ _Output:_
   
   
   (vi.) <ins> Small multiples with shared y axis </ins>
-  
-        ```
+  ```
   
           # Create a figure and an array of axes: 2 rows, 1 column with shared y axis
 fig, ax = plt.subplots(2, 1, sharey=True)
@@ -192,7 +191,6 @@ ax[1].plot(austin_weather["MONTH"], austin_weather["MLY-PRCP-25PCTL"], color='r'
 ax[1].plot(austin_weather["MONTH"], austin_weather["MLY-PRCP-75PCTL"], color='r', linestyle='--')
 
 plt.show()
-  
   ```
   
   _Output:_
@@ -201,9 +199,14 @@ plt.show()
 
   
   
-  # CHAP-2 : Plotting time-series
-
-     _Time series data is data that is recorded. Visualizing this type of data helps clarify trends and illuminates relationships between data._
+  # In The Next Chapter : Plotting Time Series we will be learning to record Time series and plot them accordingly on a Graph for purpose of Visualization. Time series data is data that is recorded. Visualizing this type of data helps clarify trends and illuminates relationships between data.Use the below Link to directly open the Repository.
+  
+  
+  # 🔗
+  #LINK : https://github.com/Darshan0902/Plotting-time-series 
+  
+  
+  
 
 
 
