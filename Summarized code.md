@@ -202,8 +202,7 @@ plt.show()
   # In The Next Chapter : Plotting Time Series we will be learning to record Time series and plot them accordingly on a Graph for purpose of Visualization. Time series data is data that is recorded. Visualizing this type of data helps clarify trends and illuminates relationships between data.Use the below Link to directly open the Repository.
   
   
-  # 🔗
-  #LINK : https://github.com/Darshan0902/Plotting-time-series 
+  # 🔗 LINK : https://github.com/Darshan0902/Plotting-time-series 
   
   
   
