@@ -12,6 +12,8 @@ Most of the Matplotlib utilities lies under the pyplot submodule, and are usuall
 ```
 import matplotlib.pyplot as plt
 
+# Run in command prompt : 
+
 ```
 
 Now the Pyplot package can be referred to as plt.
