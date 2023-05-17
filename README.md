@@ -1,6 +1,10 @@
 # -introduction-to-data-visualization-with-matplotlib
 
+To install Matplotlib library : 
 
+```
+pip install matplotlib
+```
 
 
 This chapter introduces the Matplotlib visualization library and demonstrates how to use it with data...
